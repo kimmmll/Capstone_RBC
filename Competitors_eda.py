@@ -46,4 +46,6 @@ plt.grid(axis='y', linestyle='--', alpha=0.7)
 plt.tight_layout()
 plt.show()
 
-print(df_to_analyze[df_to_analyze['post_type']=='reply'].value_counts())
+# Count number of replies
+num_replies = len(df_to_analyze[df_to_analyze['post_type']=='reply'])
+print(f"\nNumber of replies: {num_replies}")
